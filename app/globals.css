@@ -1,0 +1,286 @@
+@import 'tailwindcss';
+@import 'tw-animate-css';
+@import 'shadcn/tailwind.css';
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --color-sidebar-ring: var(--sidebar-ring);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar: var(--sidebar);
+  --color-chart-5: var(--chart-5);
+  --color-chart-4: var(--chart-4);
+  --color-chart-3: var(--chart-3);
+  --color-chart-2: var(--chart-2);
+  --color-chart-1: var(--chart-1);
+  --color-ring: var(--ring);
+  --color-input: var(--input);
+  --color-border: var(--border);
+  --color-destructive: var(--destructive);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-accent: var(--accent);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-muted: var(--muted);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-secondary: var(--secondary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-primary: var(--primary);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-popover: var(--popover);
+  --color-card-foreground: var(--card-foreground);
+  --color-card: var(--card);
+  --color-foreground: var(--foreground);
+  --color-background: var(--background);
+  --radius-sm: calc(var(--radius) * 0.6);
+  --radius-md: calc(var(--radius) * 0.8);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) * 1.4);
+  --radius-2xl: calc(var(--radius) * 1.8);
+  --radius-3xl: calc(var(--radius) * 2.2);
+  --radius-4xl: calc(var(--radius) * 2.6);
+
+  /* Typography — bind next/font families to Tailwind utilities */
+  --font-serif: var(--font-display), Georgia, 'Times New Roman', serif;
+
+  /* Brand tokens */
+  --color-gold: var(--gold);
+  --color-gold-light: var(--gold-light);
+  --color-ink: var(--ink);
+  --color-ink-muted: var(--ink-muted);
+  --color-ink-deep: var(--ink-deep);
+  --color-ink-deepest: var(--ink-deepest);
+  --color-surface: var(--surface);
+  --color-surface-raised: var(--surface-raised);
+  --color-cream: var(--cream);
+}
+
+:root {
+  color-scheme: light;
+
+  /* Core palette — warm off-white + deep ink + gold accent */
+  --background: oklch(0.97 0.005 80);          /* warm off-white */
+  --foreground: oklch(0.14 0.01 60);            /* deep ink */
+  --card: oklch(1 0 0);
+  --card-foreground: oklch(0.14 0.01 60);
+  --popover: oklch(1 0 0);
+  --popover-foreground: oklch(0.14 0.01 60);
+  --primary: oklch(0.14 0.01 60);
+  --primary-foreground: oklch(0.97 0.005 80);
+  --secondary: oklch(0.93 0.008 80);
+  --secondary-foreground: oklch(0.14 0.01 60);
+  --muted: oklch(0.93 0.008 80);
+  --muted-foreground: oklch(0.48 0.01 60);
+  --accent: #c9a96e;                            /* gold */
+  --accent-foreground: oklch(0.14 0.01 60);
+  --destructive: oklch(0.577 0.245 27.325);
+  --border: oklch(0.88 0.01 80);
+  --input: oklch(0.88 0.01 80);
+  --ring: #c9a96e;
+  --radius: 0.25rem;
+
+  /* Brand custom tokens — #c9a96e gold on a warm ink/cream scale */
+  --gold: #c9a96e;
+  --gold-light: #ddc79b;
+  --ink: oklch(0.14 0.01 60);
+  --ink-muted: oklch(0.48 0.01 60);
+  /* Dunkle Sektionsflächen (Kontakt, Intro) und Footer */
+  --ink-deep: #0e0c0a;
+  --ink-deepest: #0a0907;
+  --surface: oklch(0.97 0.005 80);
+  --surface-raised: oklch(1 0 0);
+  /* Abgesetzte, hellere Sektionsfläche (Leistungen, Karriere) */
+  --cream: #f3efe8;
+
+  --chart-1: #c9a96e;
+  --chart-2: oklch(0.48 0.01 60);
+  --chart-3: oklch(0.35 0.01 60);
+  --chart-4: oklch(0.24 0.01 60);
+  --chart-5: oklch(0.14 0.01 60);
+  --sidebar: oklch(0.97 0.005 80);
+  --sidebar-foreground: oklch(0.14 0.01 60);
+  --sidebar-primary: oklch(0.14 0.01 60);
+  --sidebar-primary-foreground: oklch(0.97 0.005 80);
+  --sidebar-accent: oklch(0.93 0.008 80);
+  --sidebar-accent-foreground: oklch(0.14 0.01 60);
+  --sidebar-border: oklch(0.88 0.01 80);
+  --sidebar-ring: #c9a96e;
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  html {
+    scroll-behavior: smooth;
+    /* Sticky header must never cover an anchor target */
+    scroll-padding-top: 5rem;
+  }
+
+  @media (min-width: 1024px) {
+    html {
+      scroll-padding-top: 6.5rem;
+    }
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-feature-settings: "kern" 1, "liga" 1;
+  }
+
+  /* Prevent iOS Safari from auto-zooming on focus (needs >= 16px) */
+  @media (max-width: 767px) {
+    input:not([type='checkbox']):not([type='radio']),
+    textarea,
+    select {
+      font-size: 1rem;
+    }
+  }
+
+  /* Fade-in animation for scroll reveal */
+  @keyframes fadeUp {
+    from {
+      opacity: 0;
+      transform: translateY(32px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+
+  @keyframes slideDown {
+    from {
+      opacity: 0;
+      transform: translateY(-8px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes scaleOut {
+    from {
+      opacity: 1;
+      transform: scale(1);
+    }
+    to {
+      opacity: 0;
+      transform: scale(1.04);
+    }
+  }
+
+  @keyframes introReveal {
+    0% { opacity: 0; transform: translateY(16px); }
+    20% { opacity: 1; transform: translateY(0); }
+    80% { opacity: 1; transform: translateY(0); }
+    100% { opacity: 0; transform: translateY(-16px); }
+  }
+
+  @keyframes lineGrow {
+    from { transform: scaleX(0); }
+    to { transform: scaleX(1); }
+  }
+
+  @keyframes valueReveal {
+    from {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes valueLine {
+    from { transform: scaleX(0); }
+    to { transform: scaleX(1); }
+  }
+
+  .animate-fade-up {
+    animation: fadeUp 0.7s ease forwards;
+  }
+
+  .animate-fade-in {
+    animation: fadeIn 0.6s ease forwards;
+  }
+
+  .animate-intro-reveal {
+    animation: introReveal 3.5s ease forwards;
+  }
+
+  .animate-scale-out {
+    animation: scaleOut 0.5s ease forwards;
+  }
+
+  .animate-line-grow {
+    animation: lineGrow 1s ease forwards;
+  }
+
+  /*
+   * Side reveals: vertical on small screens so the off-canvas transform can
+   * never create a horizontal scrollbar, horizontal only from lg upwards.
+   */
+  .reveal-left,
+  .reveal-right {
+    opacity: 0;
+    transform: translateY(24px);
+    transition:
+      opacity 0.9s ease var(--reveal-delay, 0s),
+      transform 0.9s ease var(--reveal-delay, 0s);
+  }
+
+  @media (min-width: 1024px) {
+    .reveal-left {
+      transform: translateX(-32px);
+    }
+    .reveal-right {
+      transform: translateX(32px);
+    }
+  }
+
+  .reveal-left.is-visible,
+  .reveal-right.is-visible {
+    opacity: 1;
+    transform: none;
+  }
+
+  .animate-value-reveal {
+    animation: valueReveal 0.45s ease-out both;
+  }
+
+  .animate-value-line {
+    animation: valueLine 0.65s ease-out both;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+
+    /*
+     * Content is revealed via opacity/transform, so motion must be reduced to
+     * near-zero rather than removed — otherwise sections stay invisible.
+     */
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+      transition-delay: 0s !important;
+      scroll-behavior: auto !important;
+    }
+  }
+}
