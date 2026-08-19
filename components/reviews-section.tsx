@@ -18,78 +18,14 @@ type Review = {
 }
 
 /**
- * Echte Kundenstimmen von ProvenExpert (öffentliches, verifiziertes Profil).
- * Stand: 10 veröffentlichte Bewertungen, durchweg "Sehr gut" / 5 Sterne.
+ * Kundenstimmen von ProvenExpert.
+ * Das ProvenExpert-Profil befindet sich laut Onboarding noch im Aufbau.
  * Solange dieses Array leer ist, wird im Karussell-Bereich ein neutraler
  * Hinweis mit Verweis auf das ProvenExpert-Profil ausgegeben.
  * Format pro Eintrag:
  * { name: 'Vorname N.', role: 'Beruf, Ort', text: 'O-Ton', rating: 5, initial: 'V' }
  */
-const reviews: Review[] = [
-  {
-    name: 'Günther',
-    role: 'Verifizierte Bewertung · 13.08.2026',
-    text: 'Ich wollte meine Verträge einfach mal grundlegend prüfen lassen. Was mich sofort überzeugt hat: Meine bestehenden Sachversicherungen waren bereits gut aufgestellt – Tobias hat das fair anerkannt und sie direkt in seinen Bestand übernommen. Damit habe ich jetzt endlich alles gebündelt und nur noch EINEN zentralen Ansprechpartner für alle Anliegen. Den entscheidenden Mehrwert gab es beim Thema Pflegezusatzversicherung. Er hat mir ganz ohne Panikmache, aber extrem klar aufgezeigt, welche finanziellen Konsequenzen eine Pflegelücke im Ernstfall haben kann. Absolut top Beratung, menschlich wie fachlich!',
-    rating: 5,
-    initial: 'G',
-  },
-  {
-    name: 'Vicki',
-    role: 'Verifizierte Bewertung · 13.08.2026',
-    text: 'Das Thema Berufsunfähigkeit schiebt man ja gerne mal vor sich her, weil es oft trocken und kompliziert wirkt. Tobi hat das Ganze aber extrem entspannt aufgezogen. Er hat sich richtig Zeit genommen, alle Kleingedruckte-Details verständlich erklärt und mir nichts aufgetischt, was ich nicht brauche. Beratung auf Augenhöhe, ehrlich und auf den Punkt. Wer seine BU sauber und ohne Kopfschmerzen regeln will, ist bei ihm genau richtig!',
-    rating: 5,
-    initial: 'V',
-  },
-  {
-    name: 'Linda',
-    role: 'Verifizierte Bewertung · 13.08.2026',
-    text: 'Ohne Tobias würde mein Geld immer noch auf dem Tagesgeldkonto rumdümpeln und meine Altersvorsorge wäre ein graues Tuch. Mit Fachwissen und genauem Blick für die individuelle Situation hat er meine finanzielle Vorsorge in die richtigen Bahnen gelenkt, so dass ich jetzt das Gefühl habe, gut für die Zukunft aufgestellt zu sein. DANKE!',
-    rating: 5,
-    initial: 'L',
-  },
-  {
-    name: 'Carina Jungjohann',
-    role: 'Verifizierte Bewertung · 10.08.2026',
-    text: 'Tobias ist immer erreichbar, meldet sich schnell und hat auch sehr zeitnah Lösungen für meine Probleme parat. Bei den Gesprächen nimmt er sich immer viel Zeit und geht auf alles ein, was mir am Herzen liegt. Ich fühle mich im Versicherungsdschungel besser als vorher aufgehoben.',
-    rating: 5,
-    initial: 'C',
-  },
-  {
-    name: 'Anna-Lena',
-    role: 'Verifizierte Bewertung · 09.08.2026',
-    text: 'Ich habe die Beratung als durchweg positiv erlebt und mich von Anfang an sehr gut aufgehoben gefühlt. Er nimmt sich wirklich Zeit, hört genau zu und versucht zunächst zu verstehen, was sein Gegenüber tatsächlich braucht. Man hat nicht das Gefühl, dass es darum geht, einfach irgendein Produkt zu vermitteln – stattdessen steht die individuelle Situation mit ihren Zielen und Wünschen im Mittelpunkt. Ich habe mich fachlich wie menschlich bestens aufgehoben gefühlt und kann ihn als Berater aus voller Überzeugung weiterempfehlen. Verdiente 5 Sterne!',
-    rating: 5,
-    initial: 'A',
-  },
-  {
-    name: 'Robert Isbitzki',
-    role: 'Verifizierte Bewertung · 09.08.2026',
-    text: 'Hier wird man noch ehrlich beraten und die Ausführung ist erstklassig – Qualität aus erster Hand. Ich kann den Service nur wärmstens weiterempfehlen!',
-    rating: 5,
-    initial: 'R',
-  },
-  {
-    name: 'Anonym',
-    role: 'Verifizierte Bewertung · 08.08.2026',
-    text: 'Bin ohne große Erwartungen rein und war echt begeistert. Tobi hat ein paar Punkte beim Thema Steuern und Vorsorge rausgeholt, die ich so gar nicht auf dem Schirm hatte. Extrem geiler Input!',
-    rating: 5,
-    initial: '?',
-  },
-  {
-    name: 'Sebastian',
-    role: 'Verifizierte Bewertung · 08.08.2026',
-    text: 'Das Gespräch mit Tobias war einfach nur cool. Er guckt sich wirklich alles an – von Absicherung über ETFs bis Immobilien – und schneidet alles genau auf einen zu. Kein Aufquatschen, einfach ehrlich. 10/10!',
-    rating: 5,
-    initial: 'S',
-  },
-  {
-    name: 'Alex',
-    role: 'Verifizierte Bewertung · 07.08.2026',
-    text: 'Super nette Beratung und ich bin positiv überrascht, welch umfangreiches Wissen vor allem im Bereich Investment vorhanden ist. Wusste gar nicht, dass man beim Investieren in ETFs steuerliche Vorteile haben kann. Großes Dankeschön für die Beratung.',
-    rating: 5,
-    initial: 'A',
-  },
-]
+const reviews: Review[] = []
 
 function StarRating({ count }: { count: number }) {
   return (
@@ -175,21 +111,10 @@ export function ReviewsSection() {
               <p className="text-sm font-medium">ProvenExpert</p>
               <p className="mt-1 whitespace-nowrap text-xs text-primary-foreground/60">Profil ansehen</p>
             </div>
-            <div className="ml-auto flex shrink-0 items-center border-l border-primary-foreground/10 pl-4">
-              <div className="h-16 w-16 shrink-0 overflow-hidden">
-                <span
-                  id={siteConfig.reviews.provenExpertWidgetId}
-                  className="block h-[150px] w-[150px]"
-                  style={{ transform: 'scale(0.4267)', transformOrigin: 'top left' }}
-                  aria-label="ProvenExpert-Bewertungswidget"
-                />
-              </div>
-            </div>
           </a>
-          <Script
-            src={siteConfig.reviews.provenExpertWidgetSrc}
-            strategy="lazyOnload"
-          />
+          {siteConfig.reviews.provenExpertWidgetSrc ? (
+            <Script src={siteConfig.reviews.provenExpertWidgetSrc} strategy="lazyOnload" />
+          ) : null}
         </div>
 
         {reviews.length === 0 ? (

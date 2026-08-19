@@ -7,27 +7,27 @@ import { siteConfig } from '@/config/site'
 const differentiators = [
   {
     number: '01',
-    title: 'Ingenieur, kein Verkäufer',
+    title: 'Ingenieur-Denken statt Verkaufsgespräch',
     description:
-      'Studierter Master-Ingenieur und langjähriger Senior Software-Projektleiter in der Steuergeräteentwicklung. Ich betrachte Finanzen nicht durch die Vertriebsbrille, sondern mit analytischer Präzision.',
+      'Als Entwicklungsingenieur war ich in der Automobilbranche für sicherheitsrelevante Features verantwortlich. Struktur und der Blick für Details sind mir in Fleisch und Blut übergegangen – auch in Ihrer Vorsorge.',
   },
   {
     number: '02',
-    title: 'Durchgerechnet statt geschätzt',
+    title: 'Selbst seit 2018 investiert',
     description:
-      'Ich baue Konzepte wie Systeme: logisch, überprüfbar, maßgeschneidert. Jede Empfehlung muss mathematisch aufgehen – nicht nur im Verkaufsgespräch gut klingen.',
+      'Ich beschäftige mich seit rund 20 Jahren mit meiner eigenen Altersvorsorge und investiere seit 2018 aktiv in Aktien und ETFs. Die Fragen und Zweifel meiner Mandanten kenne ich aus eigener Erfahrung.',
   },
   {
     number: '03',
-    title: 'Beratung auf Augenhöhe',
+    title: 'Klare Struktur statt Produktverkauf',
     description:
-      'Ich bin selbst erst mit 33 Jahren tiefer ins Investieren eingestiegen. Die typischen Fragen, Zweifel und Einstiegshürden meiner Mandanten kenne ich aus eigener Erfahrung.',
+      'Erst Ihre Ziele und Ihre Ist-Situation, dann mögliche Wege, dann Ihre Entscheidung. Sie bekommen keine Standardprodukte, sondern eine Empfehlung, die zu Ihrer Lage passt.',
   },
   {
     number: '04',
-    title: 'Ohne Fachchinesisch',
+    title: 'Ruhig, empathisch, ohne Fachchinesisch',
     description:
-      'Komplexe Themen erkläre ich so lange, bis sie wirklich verständlich sind. Keine Schnell-reich-werden-Versprechen, keine Renditegarantien, keine Vertriebs-Slogans.',
+      'Jede Frage darf gestellt werden, ohne dass Sie sich dumm vorkommen. Ich hole Menschen dort ab, wo sie stehen, und begleite sie den ganzen Weg.',
   },
 ]
 
@@ -66,9 +66,9 @@ export function WhyTobiasSection() {
             transition: 'opacity 0.7s ease 0.15s, transform 0.7s ease 0.15s',
           }}
         >
-          Analytisch statt
+          Ruhig statt
           <br />
-          <em className="not-italic text-gold">marktschreierisch.</em>
+          <em className="not-italic text-gold">aufdringlich.</em>
         </h2>
         <p
           className="text-base leading-relaxed text-ink-muted max-w-sm"
@@ -78,7 +78,7 @@ export function WhyTobiasSection() {
             transition: 'opacity 0.7s ease 0.25s, transform 0.7s ease 0.25s',
           }}
         >
-          Mein Unterschied liegt in meiner DNA als Ingenieur.
+          Mein Unterschied liegt in meiner Herkunft als Ingenieur.
           Vier Dinge, die meine Arbeitsweise prägen.
         </p>
       </div>

@@ -15,7 +15,7 @@ const services = [
     title: 'Arbeitskraftabsicherung',
     description:
       'Ihre Arbeitskraft ist Ihr größtes Vermögen. Ich prüfe Ihren bestehenden Schutz, decke Lücken auf und sichere ab, was im Ernstfall Ihre gesamte Planung tragen muss.',
-    highlight: 'Der Schwerpunkt meiner Beratung.',
+    highlight: 'Ohne Panikmache, mit klarer Struktur.',
   },
   {
     icon: (
@@ -25,9 +25,9 @@ const services = [
         <line x1="20" y1="10" x2="20" y2="14" />
       </svg>
     ),
-    title: 'Vermögensaufbau mit ETFs',
+    title: 'Vermögensaufbau mit Aktien & ETFs',
     description:
-      'Ich erkläre, wie breit gestreute, wissenschaftlich fundierte Sachwert-Investments funktionieren, und entwickle mit Ihnen eine Strategie, die zu Ihren Zielen passt. Beratungsschwerpunkt – die Umsetzung erfolgt über spezialisierte Partner.',
+      'Seit 2018 bin ich selbst aktiv im Bereich Aktien und ETFs unterwegs. Ich zeige, wie breit gestreute Investments funktionieren, und entwickle mit Ihnen eine Strategie, die zu Ihren Zielen passt – statt Geld auf dem Tagesgeldkonto liegen zu lassen.',
     highlight: 'Systematisch statt spekulativ.',
   },
   {
@@ -67,10 +67,10 @@ const services = [
         <line x1="9" y1="19" x2="14" y2="19" />
       </svg>
     ),
-    title: 'Selbstständige & Unternehmer',
+    title: 'Familien und Selbstständige',
     description:
-      'Ohne Arbeitgeber gibt es kein Netz: Ich baue Absicherung und Vorsorge für Selbstständige und Unternehmer auf – inklusive Depotlösungen als Beratungsschwerpunkt.',
-    highlight: 'Für alle, die selbst vorsorgen müssen.',
+      'Ob angestellt oder selbstständig: Ich baue Absicherung und Vorsorge passend zur jeweiligen Lebenssituation auf – mit besonderer Erfahrung bei Familien mit Kindern.',
+    highlight: 'Für Angestellte wie Selbstständige.',
   },
   {
     icon: (
@@ -78,10 +78,10 @@ const services = [
         <path d="M14 4l2 6h6l-5 4 2 6-5-4-5 4 2-6-5-4h6z" />
       </svg>
     ),
-    title: 'Immobilien als Kapitalanlage',
+    title: 'Immobilien als Baustein',
     description:
-      'Ich zeige, wann sich eine Anlageimmobilie rechnet und wann nicht – nüchtern durchkalkuliert. Beratungsschwerpunkt; Vermittlung und Finanzierung erfolgen über Partner mit entsprechender Erlaubnis.',
-    highlight: 'Erst rechnen, dann kaufen.',
+      'Wenn Immobilien für Ihre Situation eine Rolle spielen, ordne ich sie nüchtern in Ihre Gesamtplanung ein. Vermittlung und Finanzierung erfolgen über Partner mit entsprechender Erlaubnis.',
+    highlight: 'Erst einordnen, dann entscheiden.',
   },
 ]
 
@@ -128,8 +128,8 @@ export function ServicesSection() {
               transition: 'opacity 0.7s ease 0.2s, transform 0.7s ease 0.2s',
             }}
           >
-            Keine Produktlisten, kein Fachchinesisch. Der Fokus liegt auf existenzieller
-            Absicherung und solidem, wissenschaftlich fundiertem Vermögensaufbau.
+            Keine Produktlisten, kein Fachchinesisch. Der Fokus liegt auf verlässlicher
+            Absicherung und strukturiertem Vermögensaufbau.
           </p>
         </div>
 
@@ -167,8 +167,8 @@ export function ServicesSection() {
             transition: 'opacity 0.7s ease 0.55s',
           }}
         >
-          Versicherungsverträge vermittle ich als {siteConfig.legal.statusShort}{' '}
-          ausschließlich im Namen und unter der Haftung der Bayerischen.
+          Versicherungsverträge vermittle ich als {siteConfig.legal.statusShort} unabhängig
+          und nicht gebunden an einen einzelnen Versicherer.
           Details finden Sie in meiner{' '}
           <a href="/erstinformation" className="underline hover:text-foreground">
             Erstinformation

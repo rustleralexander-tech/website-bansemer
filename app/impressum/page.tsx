@@ -17,8 +17,6 @@ export default function ImpressumPage() {
     >
       <LegalBlock heading="Anbieter">
         <p>
-          {siteConfig.address.company}
-          <br />
           {siteConfig.person.fullName}
           <br />
           {siteConfig.address.street}
@@ -58,10 +56,8 @@ export default function ImpressumPage() {
       <LegalBlock heading="Berufsbezeichnung und Vermittlerstatus">
         <p>Berufsbezeichnung: {siteConfig.person.role}</p>
         <p>
-          Tätigkeit als {siteConfig.legal.status}. Die Vermittlung von
-          Versicherungsverträgen erfolgt ausschließlich im Namen, für Rechnung und unter
-          der Haftung der {siteConfig.legal.insurer.name},{' '}
-          {siteConfig.legal.insurer.address}.
+          Tätigkeit als {siteConfig.legal.status}. Als Versicherungsmakler vermittle ich
+          unabhängig und bin nicht an einen bestimmten Versicherer gebunden.
         </p>
       </LegalBlock>
 

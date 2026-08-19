@@ -71,19 +71,19 @@ export function HeroSection({ visible }: HeroSectionProps) {
 
         {/* Headline */}
         <h1 className="mb-5 text-balance font-serif text-[clamp(1.85rem,8.5vw,2.75rem)] leading-[1.12] text-foreground md:mb-6 md:text-5xl xl:text-6xl">
-          Finanzen mit der
+          Vorsorge mit
           <br />
-          <em className="not-italic text-gold">Präzision eines</em>
+          <em className="not-italic text-gold">Ruhe, Struktur</em>
           <br />
-          Ingenieurs.
+          und Transparenz.
         </h1>
 
         {/* Subtext */}
         <p className="mb-8 max-w-md text-base leading-relaxed text-ink-muted md:mb-10">
-          Ich bin Master-Ingenieur und Senior Software-Projektleiter – und betrachte Vorsorge und
-          Vermögensaufbau nicht durch die Vertriebsbrille, sondern als System, das
-          durchgerechnet werden muss. Für Familien, Selbstständige, Unternehmer und
-          Ingenieure.
+          Als ehemaliger Entwicklungsingenieur betrachte ich Altersvorsorge, Absicherung
+          und Vermögensaufbau mit demselben strukturierten Blick wie technische Systeme –
+          statt zu verkaufen, rechne ich durch. Für Familien, Angestellte und
+          Selbstständige in Köln und Umgebung.
         </p>
 
         {/* CTA */}

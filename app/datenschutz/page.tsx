@@ -83,11 +83,10 @@ export default function DatenschutzPage() {
           Ihrer ausdrücklichen Einwilligung nach Art. 9 Abs. 2 lit. a DSGVO.
         </p>
         <p>
-          Als gebundener Versicherungsvertreter gebe ich die für die Antragstellung und
-          Vertragsverwaltung erforderlichen Daten an die die Bayerische (Bayerische Beamten
-          Lebensversicherung a.G. / Bayerische Beamten Versicherung AG), Thomas-Dehler-Straße 25,
-          81737 München, weiter. Es gelten zusätzlich die gesetzlichen
-          Aufbewahrungspflichten nach Handels- und Steuerrecht.
+          Als Versicherungsmakler gebe ich die für die Antragstellung und Vertragsverwaltung
+          erforderlichen Daten an die jeweils von Ihnen ausgewählte Versicherungsgesellschaft
+          weiter. Es gelten zusätzlich die gesetzlichen Aufbewahrungspflichten nach Handels-
+          und Steuerrecht.
         </p>
       </LegalBlock>
 

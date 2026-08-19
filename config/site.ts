@@ -10,48 +10,47 @@
 export const siteConfig = {
   /* ---------------------------------------------------------------- Person */
   person: {
-    firstName: 'Tobias',
-    lastName: 'Harzen',
-    fullName: 'Tobias Harzen',
+    firstName: 'Sebastian',
+    lastName: 'Bansemer',
+    fullName: 'Sebastian Bansemer',
     /** Berufsbezeichnung, wie sie im Impressum geführt wird. */
-    role: 'Vorsorgeberater',
+    role: 'Vorsorge- und Finanzberater',
     /** Kurzer Untertitel für Header, Footer und Intro. */
-    tagline: 'Vorsorgeberater · Köln/Bonn',
+    tagline: 'Vorsorge- und Finanzberatung · Köln',
     /** Motto im Hero-Trust-Strip. */
-    motto: 'Ihre Finanzen verdienen einen Bauplan.',
+    motto: 'Ruhe, Struktur und Transparenz für Ihre Finanzen.',
     /** Leitzitat, das in Story- und Karriereseite erscheint. */
-    quote:
-      'Arbeiten KÖNNEN, nicht MÜSSEN – für echte finanzielle Freiheit und Selbstbestimmung.',
+    quote: 'Wann immer eine Reise endet, beginnt eine neue.',
     /** Rotierende Qualifikationen im Hero. */
-    credentials: ['Master-Ingenieur', 'Software-Projektleiter', 'Vorsorgeberater'],
+    credentials: ['Entwicklungsingenieur', 'ETF-Investor seit 2018', 'Finanzberater'],
   },
 
   /* ------------------------------------------------------------------- Site */
   /** Kanonische Produktions-URL ohne abschließenden Slash. */
-  url: 'https://tobiasharzen.de',
-  domain: 'tobiasharzen.de',
+  url: 'https://sebastianbansemer.de',
+  domain: 'sebastianbansemer.de',
   locale: 'de_DE',
   language: 'de',
 
   /* -------------------------------------------------------------------- SEO */
   seo: {
     /** Titel der Startseite. */
-    title: 'Tobias Harzen – Vorsorgeberater in Köln/Bonn',
+    title: 'Sebastian Bansemer – Vorsorge- und Finanzberatung in Köln',
     /** Suffix-Vorlage für Unterseiten. */
-    titleTemplate: '%s | Tobias Harzen',
+    titleTemplate: '%s | Sebastian Bansemer',
     description:
-      'Tobias Harzen ist Vorsorgeberater in Sankt Augustin. Als Master-Ingenieur betrachtet er Absicherung, Altersvorsorge und Vermögensaufbau mit analytischer Präzision – für Familien, Selbstständige, Unternehmer und Ingenieure.',
+      'Sebastian Bansemer berät Familien, Angestellte und Selbstständige in Köln und Umgebung zu Altersvorsorge, Absicherung und Vermögensaufbau mit Aktien und ETFs. Als ehemaliger Entwicklungsingenieur mit ruhiger, strukturierter und transparenter Arbeitsweise.',
     /** Kürzere Fassung für Social-Previews. */
     ogDescription:
-      'Finanzen mit der Präzision eines Ingenieurs: Absicherung, Altersvorsorge und Vermögensaufbau, durchgerechnet statt geschätzt.',
+      'Ruhe, Struktur und Transparenz: Vorsorge- und Finanzberatung für Familien in Köln und Umgebung.',
     keywords: [
-      'Vorsorgeberater',
+      'Vorsorgeberater Köln',
+      'Finanzberatung Köln',
       'Arbeitskraftabsicherung',
       'Altersvorsorge',
       'Vermögensaufbau ETF',
-      'Sankt Augustin',
-      'Köln Bonn',
-      'Tobias Harzen',
+      'Köln Hürth',
+      'Sebastian Bansemer',
     ],
     /** Helle Sandfarbe für die Browser-Themeleiste. */
     themeColor: '#f7f4ef',
@@ -60,34 +59,34 @@ export const siteConfig = {
   /* ----------------------------------------------------------------- Region */
   region: {
     /** Kurzform für Eyebrows und Navigation. */
-    short: 'Köln/Bonn',
+    short: 'Köln',
     /** Langform für das Beratungsgebiet im Kontaktblock. */
-    serviceArea: 'Köln/Bonn und Umgebung sowie deutschlandweit',
+    serviceArea: 'Köln und Umgebung sowie deutschlandweit',
     /** Zusatz für den Hero-Eyebrow. */
-    heroSuffix: 'Köln/Bonn & deutschlandweit',
+    heroSuffix: 'Köln & Umgebung',
   },
 
   /* ---------------------------------------------------------------- Kontakt */
   contact: {
-    phone: '+49 1634 557700',
+    phone: '+49 1512 3070007',
     /** Normalisierte Form für tel:-Links. */
-    phoneHref: 'tel:+491634557700',
+    phoneHref: 'tel:+4915123070007',
     /** Nationale Schreibweise für die Erstinformation. */
-    phoneNational: '01634 557700',
-    email: 'harzen@dpc-gruppe.de',
-    emailHref: 'mailto:harzen@dpc-gruppe.de',
+    phoneNational: '01512 3070007',
+    email: 'bansemer@dpc-gruppe.de',
+    emailHref: 'mailto:bansemer@dpc-gruppe.de',
     /** Betreff für die Karriere-Anfrage. */
     careerMailHref:
-      'mailto:harzen@dpc-gruppe.de?subject=Interesse%20an%20einer%20Zusammenarbeit',
+      'mailto:bansemer@dpc-gruppe.de?subject=Interesse%20an%20einer%20Zusammenarbeit',
   },
 
   /* ---------------------------------------------------------------- Adresse */
   address: {
-    /** Firmierung, unter der die Tätigkeit ausgeübt wird. */
-    company: 'Harzen Consulting',
-    street: 'Großenbuschstraße 99',
-    postalCode: '53757',
-    city: 'Sankt Augustin',
+    /** Firmierung, unter der die Tätigkeit ausgeübt wird (identisch mit dem Namen, da keine eigene Firma angegeben ist). */
+    company: 'Sebastian Bansemer',
+    street: 'Innungstr. 4',
+    postalCode: '50354',
+    city: 'Hürth',
     country: 'Deutschland',
     countryCode: 'DE',
   },
@@ -95,21 +94,14 @@ export const siteConfig = {
   /* ------------------------------------------------------------- Rechtliches */
   legal: {
     /** Gewerberechtlicher Status. */
-    status:
-      'gebundener Versicherungsvertreter (Ausschließlichkeitsvermittler) nach § 34d Abs. 7 Satz 1 Nr. 1 der Gewerbeordnung (GewO)',
+    status: 'Versicherungsmakler nach § 34d Abs. 1 der Gewerbeordnung (GewO)',
     /** Kurzform für Hinweistexte in den Sektionen. */
-    statusShort: 'gebundener Versicherungsvertreter nach § 34d Abs. 7 GewO',
-    registerNumber: 'DE453700414-00001',
-    /** Produktgeber, unter dessen Haftung vermittelt wird. */
-    insurer: {
-      name: 'die Bayerische (Bayerische Beamten Lebensversicherung a.G. / Bayerische Beamten Versicherung AG)',
-      shortName: 'die Bayerische',
-      address: 'Thomas-Dehler-Straße 25, 81737 München',
-    },
+    statusShort: 'Versicherungsmakler nach § 34d Abs. 1 GewO',
+    registerNumber: 'D-OH48-IQXR0-24',
     /** Zuständige Aufsichts- und Erlaubnisbehörde. */
     supervisoryAuthority: {
-      name: 'Industrie- und Handelskammer (IHK) Bonn/Rhein-Sieg',
-      address: 'Bonner Talweg 17, 53113 Bonn',
+      name: 'Industrie- und Handelskammer zu Köln',
+      address: 'Unter Sachsenhausen 5-7, 50667 Köln',
     },
     /** Gemeinsame Registerstelle. */
     registerOffice: {
@@ -143,11 +135,11 @@ export const siteConfig = {
 
   /* --------------------------------------------------------------- Bewertungen */
   reviews: {
-    provenExpertUrl:
-      'https://www.provenexpert.com/tobiasharzen/?utm_source=Widget&utm_medium=Widget&utm_campaign=Widget',
-    provenExpertWidgetSrc:
-      'https://www.provenexpert.com/widget/circlewidget.js?s=150&id=zxfrq&u=24zAhAUZ1HmA2R3Z4LwolRmAjxwZ5LGp&l=de-de',
-    provenExpertWidgetId: 'provenexpert_circle_widget_zxfrq',
+    /** ProvenExpert-Profil befindet sich laut Onboarding noch im Aufbau. */
+    provenExpertUrl: 'https://www.provenexpert.com/sebastian-bansemer/?mode=preview',
+    /** Solange kein Bewertungswidget verifiziert ist, bleiben diese Felder leer. */
+    provenExpertWidgetSrc: '',
+    provenExpertWidgetId: '',
   },
 
   /* ------------------------------------------------------------------ Bilder */
@@ -155,21 +147,21 @@ export const siteConfig = {
     hero: '/images/portrait-hero.png',
     story: '/images/portrait-story.jpg',
     seal: '/images/provenexpert-seal.png',
-    /** Slideshow im persönlichen Abschnitt. */
+    /** Slideshow im persönlichen Abschnitt — Platzhalterbilder, werden nach dem Fotoshooting ersetzt. */
     personal: [
-      { src: '/images/personal-1.png', alt: 'Tobias Harzen mit seiner Familie am Flugzeug' },
-      { src: '/images/personal-2.png', alt: 'Tobias Harzen auf seinem Quad' },
-      { src: '/images/personal-3.png', alt: 'Tobias Harzen mit seinem Sohn' },
+      { src: '/images/personal-1.png', alt: 'Persönliches Foto (Platzhalter – wird nach dem Fotoshooting ersetzt)' },
+      { src: '/images/personal-2.png', alt: 'Persönliches Foto (Platzhalter – wird nach dem Fotoshooting ersetzt)' },
+      { src: '/images/personal-3.png', alt: 'Persönliches Foto (Platzhalter – wird nach dem Fotoshooting ersetzt)' },
     ],
   },
 
   /* ------------------------------------------------------------------ E-Mail */
   mail: {
     /** Empfänger der Kontaktformular-Nachrichten. */
-    recipient: 'tobias.harzen@googlemail.com',
+    recipient: 'bansemer@dpc-gruppe.de',
     /** Verifizierte Absenderadresse in Resend. */
     sender: 'onboarding@resend.dev',
-    senderName: 'Website Harzen Vorsorge',
+    senderName: 'Website Sebastian Bansemer',
   },
 
   /* -------------------------------------------------------------- Navigation */
