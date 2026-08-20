@@ -4,8 +4,8 @@ import { Footer } from '@/components/footer'
 import { siteConfig, absoluteUrl } from '@/config/site'
 
 export const metadata: Metadata = {
-  title: 'Karriere & Partnerschaft',
-  description: `${siteConfig.person.fullName} baut eine neue Niederlassung in ${siteConfig.address.city} auf und bietet Quereinsteigern – besonders Ingenieuren – eine Perspektive in der Vorsorgeberatung.`,
+  title: 'Karriere & Zusammenarbeit',
+  description: `${siteConfig.person.fullName} spricht Menschen an, die sich für eine berufliche Zusammenarbeit in der Vorsorge- und Finanzberatung interessieren – in ${siteConfig.region.short} und Umgebung.`,
   alternates: { canonical: absoluteUrl('/karriere') },
 }
 
@@ -14,52 +14,51 @@ const reasons = [
     number: '01',
     title: 'Ein Weg, den ich selbst gegangen bin',
     description:
-      'Ich bin Master-Ingenieur und langjähriger Senior Software-Projektleiter. Ich weiß aus eigener Erfahrung, wie ein Wechsel in die Finanzwelt funktioniert – und welche Fragen man sich dabei stellt.',
+      'Ich war Entwicklungsingenieur in der Automobilbranche, bevor ich in die Finanzberatung gewechselt bin. Ich weiß, wie sich ein solcher Schritt anfühlt – und welche Fragen dabei aufkommen.',
   },
   {
     number: '02',
-    title: 'Kein Einzelkämpfertum',
+    title: 'Eine sinnvolle Aufgabe',
     description:
-      'Wir bauen aktuell eine neue Niederlassung in Sankt Augustin auf. Sie starten nicht allein, sondern in einem Team mit gewachsenem System und klaren Abläufen.',
+      'Zusammen entdecken wir neue Verdienstmöglichkeiten und den Spaß daran, einer Aufgabe nachzugehen, die wirklich etwas bewirkt: Menschen dabei zu helfen, ihre Ziele zu erreichen.',
   },
   {
     number: '03',
-    title: 'Mentoring auf Augenhöhe',
+    title: 'Ruhe und Struktur statt Druck',
     description:
-      'Als Senior Consultant und Mentor begleite ich Partner persönlich. Kein Frontalunterricht, sondern gemeinsame Arbeit an konkreten Fällen und an Ihrer Entwicklung.',
+      'Wie in der Beratung meiner Kunden gilt auch hier: kein Verkaufsdruck, sondern ein strukturierter, ehrlicher Ansatz – gemeinsam entwickelt, in Ihrem Tempo.',
   },
   {
     number: '04',
     title: 'Zukunftsmarkt statt Modethema',
     description:
-      'Vorsorge, Absicherung und Vermögensaufbau bleiben relevant – unabhängig von Konjunktur und Technologiezyklen. Ein Markt, in dem Sorgfalt und Analytik zählen.',
+      'Vorsorge, Absicherung und Vermögensaufbau bleiben relevant – unabhängig von Konjunktur und Technologiezyklen. Ein Markt, in dem Sorgfalt und Verlässlichkeit zählen.',
   },
 ]
 
 const profiles = [
   {
-    title: 'Ingenieure und technische Berufe',
+    title: 'Menschen mit analytischer Denkweise',
     description:
-      'Sie denken in Systemen, arbeiten strukturiert und rechnen nach, statt zu schätzen. Genau diese Denkweise ist in der Beratung selten – und ein echter Vorteil.',
+      'Sie arbeiten gerne strukturiert und denken in klaren Schritten statt in Bauchgefühl. Diese Denkweise ist in der Beratung selten – und ein echter Vorteil.',
   },
   {
     title: 'Quereinsteiger mit Ambition',
     description:
-      'Sie kommen aus einer völlig anderen Branche, wollen etwas Eigenes aufbauen und sind bereit, sich fachlich einzuarbeiten. Vorerfahrung in der Finanzwelt ist keine Voraussetzung.',
+      'Sie kommen aus einer anderen Branche, möchten etwas Eigenes aufbauen und sind bereit, sich fachlich einzuarbeiten. Vorerfahrung in der Finanzwelt ist keine Voraussetzung.',
   },
   {
     title: 'Menschen, die ein zweites Standbein suchen',
     description:
-      'Der Einstieg ist auch begleitend zum bestehenden Beruf möglich – so wie bei mir. Tempo und Umfang bestimmen Sie.',
+      'Der Einstieg ist auch begleitend zum bestehenden Beruf möglich. Tempo und Umfang bestimmen Sie selbst.',
   },
 ]
 
 const expectations = [
-  'Strukturierte Einarbeitung in Produkte, Beratungsprozess und Regulatorik',
-  'Persönliches Mentoring statt anonymer Onboarding-Strecke',
+  'Ein offenes, ehrliches Gespräch über Ihre Möglichkeiten',
+  'Persönliche Begleitung statt anonymer Onboarding-Strecke',
   'Flexible Zeiteinteilung und leistungsorientierte Vergütung',
-  'Ein Team, das Erfolg als Teamsache versteht – nicht als Wettkampf',
-  'Perspektive auf Verantwortung beim Aufbau der Niederlassung Sankt Augustin',
+  'Der Blick auf eine sinnvolle Aufgabe – nicht nur auf ein Produkt',
 ]
 
 export default function KarrierePage() {
@@ -94,7 +93,7 @@ export default function KarrierePage() {
             className="mb-6 text-xs uppercase text-gold"
             style={{ letterSpacing: '0.25em' }}
           >
-            Karriere &amp; Partnerschaft
+            Karriere &amp; Zusammenarbeit
           </p>
           <div className="grid gap-10 lg:grid-cols-2 lg:gap-24">
             <h1
@@ -107,15 +106,14 @@ export default function KarrierePage() {
             </h1>
             <div className="flex flex-col gap-5 text-base leading-relaxed text-ink-muted">
               <p>
-                Mein Hauptfokus liegt im Teamaufbau. Wir eröffnen eine neue Niederlassung in{' '}
-                {siteConfig.address.city} – und ich suche Menschen, die diesen Weg mitgehen
-                wollen.
+                Interessieren Sie sich für eine berufliche Zusammenarbeit in der Vorsorge-
+                und Finanzberatung? Ich freue mich über den Austausch mit Menschen, die
+                Lust haben, gemeinsam etwas aufzubauen.
               </p>
               <p>
-                Besonders spreche ich Ingenieure an. Die aktuelle Marktlage in der Industrie
-                bringt viele dazu, ihre Perspektive zu hinterfragen. Eine völlig andere
-                Branche, aber eine überaus interessante Möglichkeit – ich habe diesen Wechsel
-                selbst vollzogen.
+                Zusammen entdecken wir neue Verdienstmöglichkeiten und den Spaß daran,
+                einer sinnvollen Aufgabe nachzugehen und Menschen zu helfen – ich habe
+                diesen Wechsel aus der Ingenieurwelt selbst vollzogen.
               </p>
             </div>
           </div>

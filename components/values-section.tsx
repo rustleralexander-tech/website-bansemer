@@ -6,19 +6,19 @@ import { useInView } from '@/hooks/use-in-view'
 
 const values = [
   {
-    word: 'Vertrauen',
+    word: 'Verlässlichkeit',
     statement:
-      'Meine Mandanten wissen, dass ich ihre Finanzen mit derselben Integrität behandle wie meine eigenen. Es gibt keine versteckten Kosten und keine Entscheidungen über Ihren Kopf hinweg.',
+      'Was besprochen wird, wird eingehalten. Absprachen, Rückmeldungen und Termine sind für mich verbindlich – keine leeren Versprechen, keine vertagten Anrufe.',
   },
   {
-    word: 'Verständnis',
+    word: 'Transparenz',
     statement:
-      'Ich begegne Ihnen auf Augenhöhe. Da ich selbst erst mit 33 Jahren intensiver investiert habe, kenne ich die Einstiegshürden und erkläre komplexe Themen einfach – ohne Fachchinesisch.',
+      'Sie erfahren, wie eine Empfehlung zustande kommt, was sie kostet und welche Alternativen es gibt. Keine versteckten Kosten, keine Entscheidungen über Ihren Kopf hinweg.',
   },
   {
-    word: 'Zuverlässigkeit',
+    word: 'Struktur',
     statement:
-      'Absprachen, Berechnungen und Rückmeldungen erfolgen pünktlich, präzise und absolut verbindlich. Eben echte Ingenieursqualität.',
+      'Als Entwicklungsingenieur habe ich gelernt, Dinge in klaren Schritten zu ordnen. Genau diesen Blick für Struktur und Details bringe ich in Ihre Vorsorge ein.',
   },
 ]
 
@@ -46,7 +46,7 @@ export function ValuesSection() {
             </h2>
           </div>
           <p className="max-w-xl text-pretty text-base leading-relaxed text-muted-foreground md:text-lg lg:pb-1 lg:text-xl" style={reveal(0.12)}>
-            Drei Prinzipien, die jede Empfehlung und jede Zusammenarbeit tragen.
+            Drei Prinzipien, die jede Beratung und jede Zusammenarbeit tragen.
           </p>
         </div>
 

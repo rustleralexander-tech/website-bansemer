@@ -8,10 +8,10 @@ import { siteConfig } from '@/config/site'
 const personalImages = siteConfig.images.personal
 
 const facts = [
-  { label: 'Zuhause', value: 'Sankt Augustin, aufgewachsen in Bonn Holzlar' },
-  { label: 'Familie', value: 'Papa von einem Kind, das zweite ist unterwegs' },
-  { label: 'Leidenschaften', value: 'Autos, Chartanalyse, Krafttraining & Joggen' },
-  { label: 'Antrieb', value: 'Erfolg als Teamsache – beruflich wie privat' },
+  { label: 'Zuhause', value: 'Köln und Umgebung, im eigenen Zuhause' },
+  { label: 'Familie', value: 'Familienvater' },
+  { label: 'Leidenschaften', value: 'Fitness und Finanzen' },
+  { label: 'Motto', value: 'Wann immer eine Reise endet, beginnt eine neue' },
 ]
 
 export function PersonalSection() {
@@ -49,18 +49,18 @@ export function PersonalSection() {
             id="personal-heading"
             className="mb-8 text-balance font-serif text-[clamp(1.65rem,6.5vw,2.25rem)] leading-tight md:text-4xl xl:text-5xl"
           >
-            Verwurzelt in Bonn/Rhein-Sieg.
+            Verwurzelt in Köln.
           </h2>
 
           <p className="text-base leading-relaxed text-ink-muted mb-6">
-            Ich bin ein absoluter Familienmensch, aufgewachsen in Bonn Holzlar, fünf Jahre
-            in Köln zuhause und seit 2022 mit dem Eigenheim in Sankt Augustin niedergelassen.
-            Die Region ist für mich mehr als ein Beratungsgebiet – sie ist Heimat.
+            Ich bin Familienvater und lebe mit meiner Familie im eigenen Zuhause in Köln
+            und Umgebung. Die Region ist für mich mehr als ein Beratungsgebiet – hier lebe
+            ich, hier berate ich, hier kenne ich die Menschen.
           </p>
           <p className="text-base leading-relaxed text-ink-muted mb-10">
-            Neben der Finanzwelt schlägt mein Herz für Autos und für aktiven Sport, um den
-            Kopf freizubekommen: klassisches Krafttraining, Joggen, Training mit dem eigenen
-            Körpergewicht. Und ich brenne für persönliche Weiterentwicklung und Mentoring.
+            Neben der Finanzwelt schlägt mein Herz für Fitness – ein guter Ausgleich zum
+            analytischen Denken, das meine Arbeit prägt. Beide Themen verbindet für mich
+            derselbe Gedanke: dranbleiben, Fortschritte messen, konsequent bleiben.
           </p>
 
           {/* Facts */}
