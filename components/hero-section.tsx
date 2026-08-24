@@ -155,18 +155,19 @@ export function HeroSection({ visible }: HeroSectionProps) {
           transition: 'opacity 1.2s ease 0.5s',
         }}
       >
-        {/* The portrait PNG is freetstanding on white. We use absolute positioning
-            with a fixed pixel-width so it scales to fill the full column height.
-            A negative top value pulls Tobias' head above the hero's padding so it
-            aligns with the eyebrow text on the left. */}
+        {/* The portrait PNG is a near-square studio photo with the subject centered
+            and cropped tight (little headroom above the hair, cropped at the wrists).
+            Because it's narrower relative to height than the column, object-cover
+            fills the full column height and crops the sides symmetrically —
+            centering horizontally keeps the subject framed the same as before. */}
         <Image
           src={siteConfig.images.hero}
           alt={`${siteConfig.person.fullName} – ${siteConfig.person.role} aus ${siteConfig.address.city}`}
           fill
           priority
-          className="object-cover object-[60%_0%]"
+          className="object-cover"
           sizes="50vw"
-          style={{ objectPosition: '60% -5%' }}
+          style={{ objectPosition: '50% 50%' }}
         />
         {/* Fade bottom edge into section background */}
         <div
