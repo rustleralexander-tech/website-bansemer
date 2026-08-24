@@ -40,8 +40,9 @@ export function HeroSection({ visible }: HeroSectionProps) {
           alt=""
           fill
           priority
-          className="object-cover object-top"
+          className="object-cover"
           sizes="100vw"
+          style={{ objectPosition: '50% 0%', transform: 'scale(0.82) translateY(9%)' }}
         />
         {/* bottom fade merges into page background */}
         <div
@@ -167,7 +168,7 @@ export function HeroSection({ visible }: HeroSectionProps) {
           priority
           className="object-cover"
           sizes="50vw"
-          style={{ objectPosition: '50% 50%' }}
+          style={{ objectPosition: '50% 50%', transform: 'scale(0.82) translateY(9%)' }}
         />
         {/* Fade bottom edge into section background */}
         <div
