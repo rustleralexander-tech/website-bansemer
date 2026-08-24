@@ -26,7 +26,8 @@ export function StorySection() {
             src={siteConfig.images.story}
             alt={`${siteConfig.person.fullName} – entspannt und authentisch`}
             fill
-            className="object-cover object-top"
+            className="object-cover"
+            style={{ objectPosition: '40% 20%' }}
             sizes="(max-width: 1024px) 100vw, 50vw"
           />
 
