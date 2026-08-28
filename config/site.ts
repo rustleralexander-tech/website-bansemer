@@ -147,11 +147,10 @@ export const siteConfig = {
     hero: '/images/portrait-hero.png',
     story: '/images/portrait-story.jpg',
     seal: '/images/provenexpert-seal.png',
-    /** Slideshow im persönlichen Abschnitt — Platzhalterbilder, werden nach dem Fotoshooting ersetzt. */
+    /** Slideshow im persönlichen Abschnitt. */
     personal: [
-      { src: '/images/personal-1.png', alt: 'Persönliches Foto (Platzhalter – wird nach dem Fotoshooting ersetzt)' },
-      { src: '/images/personal-2.png', alt: 'Persönliches Foto (Platzhalter – wird nach dem Fotoshooting ersetzt)' },
-      { src: '/images/personal-3.png', alt: 'Persönliches Foto (Platzhalter – wird nach dem Fotoshooting ersetzt)' },
+      { src: '/images/personal-1.png', alt: 'Beim Fotografieren – ein Ausgleich zum analytischen Beratungsalltag' },
+      { src: '/images/personal-2.png', alt: 'Gemeinsam mit der Familie unterwegs, mit Blick über das Rheintal' },
     ],
   },
 
