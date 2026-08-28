@@ -19,8 +19,6 @@ export default function ErstinformationPage() {
         <p>
           {siteConfig.person.fullName}
           <br />
-          {siteConfig.address.company}
-          <br />
           {siteConfig.address.street}
           <br />
           {siteConfig.address.postalCode} {siteConfig.address.city}
@@ -44,15 +42,11 @@ export default function ErstinformationPage() {
         <p>Ich bin als {siteConfig.legal.status} tätig.</p>
       </LegalBlock>
 
-      <LegalBlock heading="3. Haftungsdach / Auftraggebende Gesellschaft">
+      <LegalBlock heading="3. Unabhängigkeit als Versicherungsmakler">
         <p>
-          Ich vermittle Verträge ausschließlich im Namen, für Rechnung und unter der Haftung
-          der folgenden Gesellschaft:
-        </p>
-        <p>
-          {siteConfig.legal.insurer.name}
-          <br />
-          {siteConfig.legal.insurer.address}
+          Als Versicherungsmakler vertrete ich ausschließlich Ihre Interessen als Kunde. Ich
+          bin nicht an einen bestimmten Versicherer gebunden und vermittle Verträge
+          verschiedener Gesellschaften, entsprechend Ihrer Situation und Ihren Zielen.
         </p>
       </LegalBlock>
 
@@ -89,9 +83,9 @@ export default function ErstinformationPage() {
         </p>
         <p>
           <span className="font-medium text-foreground">Vergütung:</span> Für die Vermittlung
-          und die Betreuung von Versicherungsverträgen erhalte ich eine Provision, die in der
-          Versicherungsprämie bereits enthalten ist. Ich erhalte keine direkten Honorare von
-          Ihnen als Kunde.
+          und die Betreuung von Versicherungsverträgen erhalte ich von der jeweiligen
+          Versicherungsgesellschaft eine Provision, die in der Versicherungsprämie bereits
+          enthalten ist. Ich erhalte keine direkten Honorare von Ihnen als Kunde.
         </p>
       </LegalBlock>
 

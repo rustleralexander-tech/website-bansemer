@@ -6,38 +6,45 @@ import { useInView } from '@/hooks/use-in-view'
 const steps = [
   {
     step: '01',
-    title: 'Kennenlernen',
+    title: 'Ziele und Wünsche erfassen',
     duration: 'Unverbindlich',
     description:
-      'Ein kurzes Gespräch, ob wir zueinander passen. Keine Präsentation, keine Produktempfehlung – erst wenn beide Seiten wollen, geht es weiter.',
+      'Zuerst erarbeite ich mit Ihnen, was Sie eigentlich erreichen möchten. Ohne diese Basis lässt sich nichts sinnvoll planen.',
   },
   {
     step: '02',
-    title: 'Systemanalyse: Ist-Zustand',
+    title: 'Ist-Situation darstellen',
     duration: 'Erstgespräch',
     description:
-      'Wir nehmen uns viel Zeit, um Ihre bestehende Situation und Ihre echten Lebensziele komplett zu durchleuchten. Ohne diese Basis lässt sich nichts sinnvoll rechnen.',
+      'Wir schauen uns gemeinsam an, wo Sie heute stehen – Absicherung, Vorsorge, bestehende Verträge. Offen und ohne Bewertung.',
   },
   {
     step: '03',
-    title: 'Konzeptionsphase',
+    title: 'Wege aufzeigen',
     duration: 'Im Hintergrund',
     description:
-      'Ich entwickle eine maßgeschneiderte Architektur aus Vorsorge, Absicherung, ETFs und – wenn sinnvoll – Immobilien. Jede Komponente muss mathematisch Sinn ergeben.',
+      'Ich zeige mögliche Lücken auf und mache auch auf Bereiche aufmerksam, die Sie vielleicht noch gar nicht auf dem Schirm hatten – sowie die Wege, die zu Ihren Zielen führen.',
   },
   {
     step: '04',
-    title: 'Gemeinsame Umsetzung',
-    duration: 'Schritt für Schritt',
+    title: 'Sie entscheiden',
+    duration: '"Alles geht, nichts muss"',
     description:
-      'Wir gehen das Konzept gemeinsam durch, bis jeder Baustein verständlich ist. Erst dann setzen wir um – in Ihrem Tempo, in Ihrer Reihenfolge.',
+      'Sie entscheiden, was Sie umsetzen möchten. Es gibt keinen Druck und kein Versprechen auf das jeweils billigste Produkt – nur eine Empfehlung, die zu Ihnen passt.',
   },
   {
     step: '05',
-    title: 'Check-up & Begleitung',
-    duration: 'Ein Leben lang',
+    title: 'Umsetzung',
+    duration: 'Schritt für Schritt',
     description:
-      'Ich begleite meine Kunden dauerhaft: bei Gehaltssprüngen, Familienzuwachs, Jobwechsel oder neuen Zielen. Absprachen und Rückmeldungen erfolgen verbindlich.',
+      'Wir setzen gemeinsam um, was Sie entschieden haben – in Ihrem Tempo, verständlich erklärt, ohne Fachchinesisch.',
+  },
+  {
+    step: '06',
+    title: 'Check-up & Begleitung',
+    duration: 'Alle 12 – 18 Monate',
+    description:
+      'Leben passiert: Hochzeit, Geburt, Umzug, Scheidung. Alle 12 bis 18 Monate setzen wir uns zusammen und besprechen, ob sich Ziele geändert haben oder Optimierungsbedarf besteht.',
   },
 ]
 
@@ -84,8 +91,8 @@ export function ProcessSection() {
             transition: 'opacity 0.7s ease 0.2s',
           }}
         >
-          Ich arbeite wie in der Entwicklung: erst analysieren, dann konzipieren, dann
-          umsetzen. Sie wissen zu jedem Zeitpunkt, wo Sie stehen und warum.
+          Ein fester Ablauf, an dem sich der Kunde orientieren kann. Sie wissen zu jedem
+          Zeitpunkt, wo Sie stehen und warum.
         </p>
       </div>
 

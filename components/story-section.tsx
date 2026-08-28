@@ -26,7 +26,8 @@ export function StorySection() {
             src={siteConfig.images.story}
             alt={`${siteConfig.person.fullName} – entspannt und authentisch`}
             fill
-            className="object-cover object-top"
+            className="object-cover"
+            style={{ objectPosition: '40% 20%' }}
             sizes="(max-width: 1024px) 100vw, 50vw"
           />
 
@@ -71,39 +72,34 @@ export function StorySection() {
             id="story-heading"
             className="mb-8 text-balance font-serif text-[clamp(1.65rem,6.5vw,2.25rem)] leading-tight md:text-4xl xl:text-5xl"
           >
-            Vom Steuergerät zur Finanzarchitektur.
+            Vom Ingenieur zum Vorsorgeberater.
           </h2>
 
           <div className="space-y-6 text-base leading-relaxed text-ink-muted">
             <p>
-              Mein Weg beginnt nicht in der Finanzwelt, sondern in der Technik: duales Studium
-              Elektrotechnik an der Hochschule Bonn-Rhein-Sieg, gelernter Elektroniker für
-              Betriebstechnik, anschließend Master in Elektrotechnik. Danach Software für
-              Steuergeräte in der Automobilbranche – bei Bertrandt in Köln, bei Aptiv und
-              heute bei Dauch in Lohmar.
+              Bevor ich in die Finanzberatung gewechselt bin, war ich Entwicklungsingenieur
+              in der Automobilbranche – verantwortlich für die Entwicklung sicherheitsrelevanter
+              Features. Struktur, Sorgfalt und ein Blick für Details waren dort keine Kür,
+              sondern Pflicht.
             </p>
             <p>
-              2018 sprach ich mit einem Arbeitskollegen erstmals über ETFs – ein Begriff, der
-              mir damals völlig fremd war. Anfang 2021 ließ ich mich umfassend aufklären und
-              startete meine ersten Investments. Mit 33 fühlte ich mich wie ein Spätzünder.
-              Genau das wurde mein Katalysator: Ich habe mich tief in Aktien, ETFs und
-              Immobilien eingearbeitet und diese Themen nicht mehr losgelassen.
+              Mit meiner eigenen Altersvorsorge beschäftige ich mich schon, seit ich Geld
+              verdiene – seit rund 20 Jahren. Seit 2018 bin ich aktiv im Bereich Aktien und
+              ETFs unterwegs, weil ich gemerkt habe, dass klassische Produkte wie Tagesgeld
+              oder Sparbuch Renditen unterhalb oder nur knapp oberhalb der Inflation
+              erwirtschaften.
             </p>
             <p>
-              Parallel stellte ich mir die entscheidende Frage: Was würde ich den ganzen Tag
-              tun, wenn Zeit und Geld keine Rolle spielten? Wenn ich arbeiten KÖNNTE, aber
-              nicht mehr MÜSSTE? Zwei Leidenschaften blieben übrig: Autos und Finanzen.
-            </p>
-            <p>
-              Als sich mir der Weg in die Beratung eröffnete, steckte ich mitten in einer
-              Trading-Ausbildung. Eigentlich hatte ich keine Zeit mehr. Doch je mehr ich über
-              Arbeitsweise, Knowhow und Möglichkeiten erfuhr, desto klarer wurde die
-              Entscheidung: für die Beratung, gegen das Daytrading.
+              Als Entwicklungsingenieur sind Struktur und der Blick für Details wesentlich –
+              genau wie die Fähigkeit, auch in stressigen Situationen ruhig zu bleiben. Mit
+              dieser ruhigen und empathischen Art und einem strukturierten Ansatz hole ich
+              Menschen dort ab, wo sie stehen, zeige ihnen Wege auf, dahin zu kommen, wo sie
+              hinwollen, und begleite sie den ganzen Weg.
             </p>
             <p className="font-medium text-foreground">
-              Heute verbinde ich meine analytische Leidenschaft mit dem Ziel, andere Menschen
-              auf ihrem Weg in die finanzielle Unabhängigkeit zu begleiten. Genau das bedeutet
-              für mich echte Lebensqualität.
+              Heute stehe ich für Ruhe, Struktur und Transparenz – und begleite Familien,
+              Angestellte und Selbstständige dabei, ihre Finanzen so zu ordnen, dass Ziele
+              und Wünsche nicht dem Zufall überlassen bleiben.
             </p>
           </div>
 

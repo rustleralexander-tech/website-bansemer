@@ -40,8 +40,9 @@ export function HeroSection({ visible }: HeroSectionProps) {
           alt=""
           fill
           priority
-          className="object-cover object-top"
+          className="object-cover"
           sizes="100vw"
+          style={{ objectPosition: '50% 0%', transform: 'scale(0.82) translateY(9%)' }}
         />
         {/* bottom fade merges into page background */}
         <div
@@ -71,19 +72,19 @@ export function HeroSection({ visible }: HeroSectionProps) {
 
         {/* Headline */}
         <h1 className="mb-5 text-balance font-serif text-[clamp(1.85rem,8.5vw,2.75rem)] leading-[1.12] text-foreground md:mb-6 md:text-5xl xl:text-6xl">
-          Finanzen mit der
+          Vorsorge mit
           <br />
-          <em className="not-italic text-gold">Präzision eines</em>
+          <em className="not-italic text-gold">Ruhe, Struktur</em>
           <br />
-          Ingenieurs.
+          und Transparenz.
         </h1>
 
         {/* Subtext */}
         <p className="mb-8 max-w-md text-base leading-relaxed text-ink-muted md:mb-10">
-          Ich bin Master-Ingenieur und Senior Software-Projektleiter – und betrachte Vorsorge und
-          Vermögensaufbau nicht durch die Vertriebsbrille, sondern als System, das
-          durchgerechnet werden muss. Für Familien, Selbstständige, Unternehmer und
-          Ingenieure.
+          Als ehemaliger Entwicklungsingenieur betrachte ich Altersvorsorge, Absicherung
+          und Vermögensaufbau mit demselben strukturierten Blick wie technische Systeme –
+          statt zu verkaufen, rechne ich durch. Für Familien, Angestellte und
+          Selbstständige in Köln und Umgebung.
         </p>
 
         {/* CTA */}
@@ -155,18 +156,19 @@ export function HeroSection({ visible }: HeroSectionProps) {
           transition: 'opacity 1.2s ease 0.5s',
         }}
       >
-        {/* The portrait PNG is freetstanding on white. We use absolute positioning
-            with a fixed pixel-width so it scales to fill the full column height.
-            A negative top value pulls Tobias' head above the hero's padding so it
-            aligns with the eyebrow text on the left. */}
+        {/* The portrait PNG is a near-square studio photo with the subject centered
+            and cropped tight (little headroom above the hair, cropped at the wrists).
+            Because it's narrower relative to height than the column, object-cover
+            fills the full column height and crops the sides symmetrically —
+            centering horizontally keeps the subject framed the same as before. */}
         <Image
           src={siteConfig.images.hero}
           alt={`${siteConfig.person.fullName} – ${siteConfig.person.role} aus ${siteConfig.address.city}`}
           fill
           priority
-          className="object-cover object-[60%_0%]"
+          className="object-cover"
           sizes="50vw"
-          style={{ objectPosition: '60% -5%' }}
+          style={{ objectPosition: '50% 50%', transform: 'scale(0.82) translateY(9%)' }}
         />
         {/* Fade bottom edge into section background */}
         <div
