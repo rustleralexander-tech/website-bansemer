@@ -56,8 +56,9 @@ export default function ImpressumPage() {
       <LegalBlock heading="Berufsbezeichnung und Vermittlerstatus">
         <p>Berufsbezeichnung: {siteConfig.person.role}</p>
         <p>
-          Tätigkeit als {siteConfig.legal.status}. Als Versicherungsmakler vermittle ich
-          unabhängig und bin nicht an einen bestimmten Versicherer gebunden.
+          Tätigkeit als {siteConfig.legal.status}. Als gebundener Handelsvertreter
+          vermittle ich ausschließlich Produkte des Versicherers, mit dem ein
+          entsprechendes Vertragsverhältnis besteht.
         </p>
       </LegalBlock>
 

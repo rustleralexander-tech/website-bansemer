@@ -42,11 +42,12 @@ export default function ErstinformationPage() {
         <p>Ich bin als {siteConfig.legal.status} tätig.</p>
       </LegalBlock>
 
-      <LegalBlock heading="3. Unabhängigkeit als Versicherungsmakler">
+      <LegalBlock heading="3. Vertragliche Bindung als gebundener Handelsvertreter">
         <p>
-          Als Versicherungsmakler vertrete ich ausschließlich Ihre Interessen als Kunde. Ich
-          bin nicht an einen bestimmten Versicherer gebunden und vermittle Verträge
-          verschiedener Gesellschaften, entsprechend Ihrer Situation und Ihren Zielen.
+          Als gebundener Handelsvertreter vermittle ich ausschließlich Versicherungs- und
+          Finanzprodukte des Unternehmens, mit dem ein entsprechendes Vertragsverhältnis
+          besteht. Ich bin nicht für mehrere Versicherer im Sinne eines Versicherungsmaklers
+          tätig.
         </p>
       </LegalBlock>
 

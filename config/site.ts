@@ -84,9 +84,9 @@ export const siteConfig = {
   address: {
     /** Firmierung, unter der die Tätigkeit ausgeübt wird (identisch mit dem Namen, da keine eigene Firma angegeben ist). */
     company: 'Sebastian Bansemer',
-    street: 'Innungstr. 4',
-    postalCode: '50354',
-    city: 'Hürth',
+    street: 'Elsa-Brändström-Str. 65',
+    postalCode: '53879',
+    city: 'Euskirchen',
     country: 'Deutschland',
     countryCode: 'DE',
   },
@@ -94,9 +94,9 @@ export const siteConfig = {
   /* ------------------------------------------------------------- Rechtliches */
   legal: {
     /** Gewerberechtlicher Status. */
-    status: 'Versicherungsmakler nach § 34d Abs. 1 der Gewerbeordnung (GewO)',
+    status: 'gebundener Versicherungsvertreter nach § 34d Abs. 4 der Gewerbeordnung (GewO)',
     /** Kurzform für Hinweistexte in den Sektionen. */
-    statusShort: 'Versicherungsmakler nach § 34d Abs. 1 GewO',
+    statusShort: 'gebundener Versicherungsvertreter nach § 34d Abs. 4 GewO',
     registerNumber: 'D-OH48-IQXR0-24',
     /** Zuständige Aufsichts- und Erlaubnisbehörde. */
     supervisoryAuthority: {
