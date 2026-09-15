@@ -83,10 +83,10 @@ export default function DatenschutzPage() {
           Ihrer ausdrücklichen Einwilligung nach Art. 9 Abs. 2 lit. a DSGVO.
         </p>
         <p>
-          Als Versicherungsmakler gebe ich die für die Antragstellung und Vertragsverwaltung
-          erforderlichen Daten an die jeweils von Ihnen ausgewählte Versicherungsgesellschaft
-          weiter. Es gelten zusätzlich die gesetzlichen Aufbewahrungspflichten nach Handels-
-          und Steuerrecht.
+          Als gebundener Handelsvertreter gebe ich die für die Antragstellung und
+          Vertragsverwaltung erforderlichen Daten an das Versicherungsunternehmen weiter,
+          für das ich vermittelnd tätig bin. Es gelten zusätzlich die gesetzlichen
+          Aufbewahrungspflichten nach Handels- und Steuerrecht.
         </p>
       </LegalBlock>
 
